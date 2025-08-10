@@ -7,11 +7,10 @@
 }
 
 .chat-list-container {
-    width: 300px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: 100vh;
+    height: calc(100vh - 10vh);
     margin-left: 70px;
 }
 
