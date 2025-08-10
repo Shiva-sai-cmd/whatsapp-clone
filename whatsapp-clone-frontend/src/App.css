@@ -1,0 +1,38 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d1d7db;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-window {
+  display: flex;
+  width: calc(100% - 38px);
+  height: calc(100% - 38px);
+  max-width: 1600px;
+  box-shadow: 0 6px 18px rgba(11, 20, 26, 0.05);
+}
+
+@media (max-width: 768px) {
+  .main-window {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .main-window>* {
+    width: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar-main-container,
+  .chat-window-container {
+    width: 100%;
+    max-width: none;
+  }
+}

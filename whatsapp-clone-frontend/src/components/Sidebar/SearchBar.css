@@ -1,0 +1,30 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--whatsapp-panel-header-background);
+    padding: 8px 12px;
+    border-bottom: 1px solid #e9edef;
+}
+
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--whatsapp-white);
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 100%;
+}
+
+.search-icon {
+    color: var(--whatsapp-icon-color);
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.95rem;
+    background-color: transparent;
+}

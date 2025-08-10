@@ -1,0 +1,24 @@
+
+:root {
+  --whatsapp-teal-green: #00a884;
+  --whatsapp-teal-green-dark: #008069;
+  --whatsapp-light-green: #dcf8c6;
+  --whatsapp-white: #ffffff;
+  --whatsapp-black: #111b21;
+  --whatsapp-panel-header-background: #f0f2f5;
+  --whatsapp-app-background: #d1d7db;
+  --whatsapp-chat-background: #e5ddd5;
+  --whatsapp-icon-color: #54656f;
+  --whatsapp-text-color: #3b4a54;
+  --whatsapp-secondary-text-color: #667781;
+  --whatsapp-read-tick-blue: #53bdeb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--whatsapp-app-background);
+  color: var(--whatsapp-text-color);
+}

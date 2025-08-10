@@ -1,0 +1,57 @@
+.message-input-container {
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 20px;
+    background-color: var(--whatsapp-panel-header-background);
+    border-top: 1px solid #ddd;
+}
+
+.input-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    color: var(--whatsapp-icon-color);
+    padding-bottom: 8px;
+}
+
+.input-icons>* {
+    cursor: pointer;
+}
+
+.message-input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--whatsapp-white);
+    border-radius: 8px;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 0 15px;
+}
+
+.message-textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.95rem;
+    background-color: transparent;
+    resize: none;
+    max-height: 120px;
+    overflow-y: auto;
+    line-height: 1.5;
+}
+
+.action-button {
+    background: var(--whatsapp-teal-green-dark);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
