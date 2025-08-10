@@ -8,9 +8,10 @@
 
 .chat-list-container {
     display: flex;
+    width: 300px;
     flex-direction: column;
     background-color: #fff;
-    height: calc(100vh - 10vh);
+    height: 100vh;
     margin-left: 70px;
 }
 
@@ -97,6 +98,7 @@
         order: 0;
         flex-grow: 1;
         margin-left: 0;
+        width: 100%;
         height: calc(100%-60px);
     }
     

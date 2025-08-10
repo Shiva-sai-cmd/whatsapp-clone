@@ -9,8 +9,8 @@
 
 .main-window {
   display: flex;
-  width: calc(100% - 38px);
-  height: calc(100% - 38px);
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
   max-width: 1600px;
   box-shadow: 0 6px 18px rgba(11, 20, 26, 0.05);
 }
