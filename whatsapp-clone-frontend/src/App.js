@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import ChatWindow from './components/ChatWindow/ChatWindow';
 import './App.css';
 
-const socket = io('http://localhost:3001');
+const socket = io('*');
 
 function App() {
   const [selectedChat, setSelectedChat] = useState(null);
