@@ -27,6 +27,7 @@ const MessageInput = ({ selectedChat }) => {
     const messageData = {
       to: selectedChat.wa_id,
       body: text,
+      name:selectedChat.name,
     };
 
     try {
