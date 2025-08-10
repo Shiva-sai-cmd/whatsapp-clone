@@ -6,7 +6,7 @@ import { ImAttachment } from 'react-icons/im';
 import { FaMicrophone } from 'react-icons/fa';
 import { IoSend } from 'react-icons/io5';
 
-const API_URL = '/api';
+const API_URL = "https://whatsapp-clone-backend-i7np.onrender.com/api";
 
 const MessageInput = ({ selectedChat }) => {
   const [text, setText] = useState('');
@@ -30,7 +30,7 @@ const MessageInput = ({ selectedChat }) => {
     };
 
     try {
-      await axios.post(`${API_URL}/api/messages`, messageData);
+      await axios.post(`${API_URL}/messages`, messageData);
       setText('');
     } catch (error) {
       console.error("Failed to send message", error);

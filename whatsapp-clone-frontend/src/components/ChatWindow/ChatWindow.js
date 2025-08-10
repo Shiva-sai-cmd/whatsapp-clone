@@ -6,7 +6,7 @@ import MessageMeta from './MessageMeta';
 import { IoSearch, IoArrowBack, IoLockClosed, IoVideocamOutline, IoCallOutline } from 'react-icons/io5';
 import Avatar from '../common/Avatar';
 
-const API_URL = '/api';
+const API_URL ="https://whatsapp-clone-backend-i7np.onrender.com/api";
 
 const ChatWindow = ({ selectedChat, socket, onGoBack }) => {
   const [messages, setMessages] = useState([]);
@@ -20,7 +20,7 @@ const ChatWindow = ({ selectedChat, socket, onGoBack }) => {
     if (selectedChat) {
       const fetchMessages = async () => {
         try {
-          const response = await axios.get(`${API_URL}/api/chats/${selectedChat.wa_id}`);
+          const response = await axios.get(`${API_URL}/chats/${selectedChat.wa_id}`);
           setMessages(response.data);
         } catch (error) {
           console.error("Failed to fetch messages for chat:", selectedChat.wa_id, error);

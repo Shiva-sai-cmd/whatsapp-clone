@@ -7,7 +7,7 @@ import { BsFillChatLeftTextFill } from "react-icons/bs";
 import SearchBar from './SearchBar';
 import Avatar from '../common/Avatar';
 
-const API_URL = '/api';
+const API_URL = "https://whatsapp-clone-backend-i7np.onrender.com/api";
 
 const formatTimestamp = (isoString) => {
   if (!isoString) return '';
@@ -25,7 +25,7 @@ const Sidebar = ({ onSelectChat, selectedChat, isNavOpen, setIsNavOpen, socket }
   useEffect(() => {
     const fetchChats = async () => {
       try {
-        const response = await axios.get(`${API_URL}/api/chats`);
+        const response = await axios.get(`${API_URL}/chats`);
         setChats(response.data);
       } catch (error) {
         console.error("Failed to fetch chats", error);

@@ -12,7 +12,10 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: process.env.CLIENT_URL || "http://localhost:3000",
+  methods: ["GET", "POST"],
+  credentials: true}));
 app.use(express.json());
 
 // Connect to MongoDB
@@ -56,7 +59,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "*", 
+    origin: process.env.CLIENT_URL || "http://localhost:3000", 
     methods: ["GET", "POST"]
   }
 });

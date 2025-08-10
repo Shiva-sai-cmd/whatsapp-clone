@@ -4,7 +4,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import ChatWindow from './components/ChatWindow/ChatWindow';
 import './App.css';
 
-const socket = io('*');
+const socket = io("https://whatsapp-clone-backend-i7np.onrender.com");
+
 
 function App() {
   const [selectedChat, setSelectedChat] = useState(null);
